@@ -21,7 +21,7 @@ const InvestmentSection = () => {
             }}
           >
             Our portfolio of companies have all been selected based on
-            successful ideas or outcomes. Either successful enrepreneiurs who we
+            successful ideas or outcomes. Either successful Entrepreneurs who we
             believe in or in business sectors we see potential growth in or
             financial numbers that reflect great future possibilities. AK
             HOLDING owns equity shares in companies that shows remarkable
