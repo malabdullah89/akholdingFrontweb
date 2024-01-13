@@ -1,7 +1,10 @@
 import React from "react";
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
+import PitchModal from "./PitchModal";
 
 const HeroSection = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
   return (
     <Box
       component="section"
@@ -74,6 +77,7 @@ const HeroSection = () => {
                     bgcolor: "#000",
                   },
                 }}
+                onClick={handleOpen}
               >
                 <Typography
                   color={"#fff"}
@@ -90,6 +94,7 @@ const HeroSection = () => {
           </Stack>
         </Stack>
       </Container>
+      <PitchModal open={open} setOpen={setOpen} />
     </Box>
   );
 };
