@@ -14,6 +14,7 @@ import { navItems } from "./Header";
 
 import theme from "@/styles/theme";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import Link from 'next/link'
 import Image from "next/image";
 
 const Footer = () => {
@@ -70,30 +71,33 @@ const Footer = () => {
           </Box>
 
           <Stack flexDirection={"row"} gap={"12px"} alignItems={"center"}>
-            <Image
+            {/* <Image
               width={24}
               height={24}
               src={"/assets/facebook.svg"}
               alt="facebook"
-            />
+            /> */}
+            <Link href='https://www.instagram.com/akholdingco/'>
             <Image
               width={24}
               height={24}
               src={"/assets/instagram.svg"}
-              alt="instagram"
+              alt="ak holding instagram"
             />
-            <Image
+            </Link>
+           
+            {/* <Image
               width={24}
               height={24}
               src={"/assets/twitter.svg"}
               alt="twitter"
-            />
-            <Image
+            /> */}
+            {/* <Image
               width={24}
               height={24}
               src={"/assets/linkedin.svg"}
               alt="linkedin"
-            />
+            /> */}
           </Stack>
         </Stack>
 

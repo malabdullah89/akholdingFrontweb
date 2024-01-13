@@ -11,8 +11,8 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({
-  width = 250,
-  height = 38.09,
+  width = 320,
+  height = 100,
   justifyContent = "center",
   color = "black",
 }) => {
