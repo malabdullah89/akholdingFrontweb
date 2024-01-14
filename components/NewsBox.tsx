@@ -15,6 +15,7 @@ interface ServiceBoxProps {
   primaryText: string;
   secondaryText: string;
   arrayOfButtons?: string[];
+  onClick?: any;
 }
 
 const NewsBox: React.FC<ServiceBoxProps> = ({
@@ -23,6 +24,7 @@ const NewsBox: React.FC<ServiceBoxProps> = ({
   primaryText,
   imageTitle = primaryText,
   secondaryText,
+  onClick,
 }) => {
   return (
     <Card
@@ -62,6 +64,7 @@ const NewsBox: React.FC<ServiceBoxProps> = ({
       </CardContent>
       <CardActions sx={{ pb: 2, justifyContent: "center" }}>
         <Button
+          onClick={onClick}
           variant="text"
           sx={{
             fontWeight: 600,

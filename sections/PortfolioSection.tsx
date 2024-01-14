@@ -5,7 +5,6 @@ import { Box, Container, Stack } from "@mui/material";
 import PortfolioCard from "@/components/PortfolioCard";
 
 import TitleText from "@/components/TitleText";
-import Image from "next/image";
 
 const PortfolioSection = () => {
   return (
@@ -27,30 +26,35 @@ const PortfolioSection = () => {
             }}
           >
             <PortfolioCard
+              description="card1"
               cardName="card1"
               alt="card1"
               width={274}
               height={87}
             />
             <PortfolioCard
+              description="Lorem ipsum dolor sit amet"
               cardName="card2"
               alt="card2"
               width={129}
               height={198}
             />
             <PortfolioCard
+              description="Lorem ipsum dolor sit amet"
               cardName="card3"
               alt="card3"
               width={245}
               height={114}
             />
             <PortfolioCard
+              description="Lorem ipsum dolor sit amet"
               cardName="card4"
               alt="card4"
               width={214}
               height={76}
             />
             <PortfolioCard
+              description="Lorem ipsum dolor sit amet"
               cardName="card5"
               alt="card5"
               width={120}
@@ -58,6 +62,7 @@ const PortfolioSection = () => {
             />
 
             <PortfolioCard
+              description="Lorem ipsum dolor sit amet"
               cardName="card6"
               alt="card6"
               width={225}
@@ -76,6 +81,7 @@ const PortfolioSection = () => {
             }}
           >
             <PortfolioCard
+              description="Lorem ipsum dolor sit amet"
               cardName="card7"
               alt="card7"
               width={80}
@@ -83,6 +89,7 @@ const PortfolioSection = () => {
               type="small"
             />
             <PortfolioCard
+              description="Lorem ipsum dolor sit amet"
               cardName="card8"
               alt="card8"
               width={93}
@@ -90,6 +97,7 @@ const PortfolioSection = () => {
               type="small"
             />
             <PortfolioCard
+              description="Lorem ipsum dolor sit amet"
               cardName="card9"
               alt="card9"
               width={120}
@@ -97,6 +105,7 @@ const PortfolioSection = () => {
               type="small"
             />
             <PortfolioCard
+              description="Lorem ipsum dolor sit amet"
               cardName="card10"
               alt="card10"
               width={209}
@@ -104,6 +113,7 @@ const PortfolioSection = () => {
               type="small"
             />
             <PortfolioCard
+              description="Lorem ipsum dolor sit amet"
               cardName="card11"
               alt="card11"
               width={200}

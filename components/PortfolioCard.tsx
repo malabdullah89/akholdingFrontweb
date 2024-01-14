@@ -10,6 +10,7 @@ interface PortfolioCardProps {
   type?: string;
   width: number;
   height: number;
+  description: string;
 }
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({
@@ -18,6 +19,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
   width,
   height,
   type = "big",
+  description,
 }) => {
   const [isHovered, setIsHovered] = React.useState(false);
 
@@ -69,7 +71,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
               lineHeight: "normal",
             }}
           >
-            Lorem ipsum dolor sit amet consectetur.
+            {description}
           </Typography>
         </Stack>
       ) : (

@@ -19,7 +19,6 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  // bgcolor: "#555454",
   bgcolor: "background.paper",
   boxShadow:
     " rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
@@ -29,11 +28,6 @@ const style = {
   outline: "none",
   minWidth: "680px",
   color: "#062440",
-
-  // opacity: 0.7,
-  // background: "rgba(209, 209, 209, 0.45)",
-  // boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset",
-  // backdropFilter: "blur(53px)",
 };
 
 const validationSchema = yup.object({

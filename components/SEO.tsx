@@ -25,6 +25,9 @@ const SEO = () => {
 
       {/* favicon */}
       <link rel="icon" href="/favicon.ico" />
+      {/* <link rel="icon" type="image/png" sizes="32x32" href="path/to/your/favicon.png"/> */}
+      <link rel="icon" type="image/svg+xml" href="/new-logo-black.svg" />
+
       <link
         rel="apple-touch-icon"
         sizes="180x180"
