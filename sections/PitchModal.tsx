@@ -12,6 +12,7 @@ import { showAlert, usePageContext } from "@/context/pageContext";
 import useReactQuery from "@/hooks/useReactQuery";
 import { FormikHelpers } from "formik";
 import ClearIcon from "@mui/icons-material/Clear";
+import { objectToFormData } from "@/utils/ObjectToFormData";
 
 const style = {
   position: "absolute" as "absolute",
@@ -31,28 +32,33 @@ const style = {
 };
 
 const validationSchema = yup.object({
-  amount: validationRules.number,
+  name: validationRules.string,
+  phone: validationRules.string,
+  position: validationRules.string,
+  email: validationRules.email,
+  pitchBrief: validationRules.string,
+  file: validationRules.file,
 });
 
 export default function PitchModal({ open, setOpen }: any) {
   const handleClose = () => setOpen(false);
 
-  const { state, dispatch } = usePageContext();
+  const { dispatch } = usePageContext();
 
-  const { mutate: changeWallet, isLoading }: any = useReactQuery({
-    key: "changeWallet",
-    url: `Wallet/admin`,
+  const { mutate: sendEmail, isLoading }: any = useReactQuery({
+    key: "sendEmail",
+    url: `email/send`,
     method: "POST",
     onSuccess: () => {
-      handleClose();
       dispatch(
         showAlert({
           vertical: "top",
           horizontal: "right",
-          message: "successful",
+          message: "Email Sent Successfully",
           severity: "success",
         })
       );
+      handleClose();
     },
     onError: ({ response }: any) => {
       console.log(response, "errror");
@@ -69,11 +75,10 @@ export default function PitchModal({ open, setOpen }: any) {
 
   const onSubmit = async (values: any, { resetForm }: FormikHelpers<any>) => {
     try {
-      changeWallet(values);
-      resetForm();
+      const data = objectToFormData(values);
+      sendEmail(data);
+      // resetForm();
     } catch (error) {
-      console.log(error, "errorerror");
-
       dispatch(
         showAlert({
           vertical: "top",

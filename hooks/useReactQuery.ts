@@ -44,11 +44,10 @@ const useReactQuery = <T = any>({
   method = "GET",
   enabled = true,
 }: UseReactQueryOptions) => {
-  // omit(data, "requestUrl"),
-  const token = Cookies.get("shareo-token");
+  const token = Cookies.get("ak-token");
   const fetcher = async (data: any, query: QueryObject) => {
     const res = await axios.request({
-      baseURL: "config.baseUrl",
+      baseURL: "http://139.59.13.210:3001/api/v1/",
       url: data?.requestUrl ?? url,
       method,
       data: data,
