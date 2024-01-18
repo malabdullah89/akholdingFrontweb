@@ -26,35 +26,35 @@ const PortfolioSection = () => {
             }}
           >
             <PortfolioCard
-              description="card1"
+              description="Artisan diffusers and candles shop based in Kuwait and founded by a group of individuals passionate about art, design, and home."
               cardName="card1"
               alt="card1"
               width={274}
               height={87}
             />
             <PortfolioCard
-              description="Lorem ipsum dolor sit amet"
+              description="We specialize in health products, such as honey, olive oil, sesame oil, pomegranate molasses, and sheep ghee."
               cardName="card2"
               alt="card2"
               width={129}
               height={198}
             />
             <PortfolioCard
-              description="Lorem ipsum dolor sit amet"
+              description="In one place, you will explore high school and university classes that will match your needs. Delivered by your favorite teachers."
               cardName="card3"
               alt="card3"
               width={245}
               height={114}
             />
             <PortfolioCard
-              description="Lorem ipsum dolor sit amet"
+              description="Let’s get connected! Share your social platforms faster and easier with Reach."
               cardName="card4"
               alt="card4"
               width={214}
               height={76}
             />
             <PortfolioCard
-              description="Lorem ipsum dolor sit amet"
+              description="Ghaseel is the first marketplace for car wash services in Kuwait, launched in 2015"
               cardName="card5"
               alt="card5"
               width={120}
@@ -62,7 +62,7 @@ const PortfolioSection = () => {
             />
 
             <PortfolioCard
-              description="Lorem ipsum dolor sit amet"
+              description=""
               cardName="card6"
               alt="card6"
               width={225}
@@ -81,7 +81,7 @@ const PortfolioSection = () => {
             }}
           >
             <PortfolioCard
-              description="Lorem ipsum dolor sit amet"
+              description=""
               cardName="card7"
               alt="card7"
               width={80}
@@ -89,7 +89,7 @@ const PortfolioSection = () => {
               type="small"
             />
             <PortfolioCard
-              description="Lorem ipsum dolor sit amet"
+              description=""
               cardName="card8"
               alt="card8"
               width={93}
@@ -97,7 +97,7 @@ const PortfolioSection = () => {
               type="small"
             />
             <PortfolioCard
-              description="Lorem ipsum dolor sit amet"
+              description=""
               cardName="card9"
               alt="card9"
               width={120}
@@ -105,7 +105,7 @@ const PortfolioSection = () => {
               type="small"
             />
             <PortfolioCard
-              description="Lorem ipsum dolor sit amet"
+              description=""
               cardName="card10"
               alt="card10"
               width={209}
@@ -113,7 +113,7 @@ const PortfolioSection = () => {
               type="small"
             />
             <PortfolioCard
-              description="Lorem ipsum dolor sit amet"
+              description=""
               cardName="card11"
               alt="card11"
               width={200}
