@@ -21,15 +21,20 @@ const PortfolioSection = () => {
           <Stack
             sx={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
-              gap: "22px",
+              gridTemplateColumns: {
+                xs: "repeat(1, 1fr)",
+                sm: "repeat(2, 1fr)",
+                md: "repeat(auto-fill, minmax(240px, 1fr))",
+                lg: "repeat(4, 1fr)",
+              },
+              gap: "8px",
             }}
           >
             <PortfolioCard
               description="card1"
               cardName="card1"
               alt="card1"
-              width={274}
+              width={250}
               height={87}
             />
             <PortfolioCard
@@ -46,6 +51,26 @@ const PortfolioSection = () => {
               width={245}
               height={114}
             />
+
+            <PortfolioCard
+              description="card12"
+              cardName="card12"
+              alt="card12"
+              width={274}
+              height={87}
+            />
+          </Stack>
+
+          <Stack
+            sx={{
+              display: "grid",
+              gridTemplateColumns: {
+                xs: "repeat(auto-fill, minmax(300px, 1fr))",
+                md: "repeat(auto-fill, minmax(300px, 1fr))",
+              },
+              gap: { xs: "22px", md: "10px" },
+            }}
+          >
             <PortfolioCard
               description="Lorem ipsum dolor sit amet"
               cardName="card4"
@@ -60,7 +85,6 @@ const PortfolioSection = () => {
               width={120}
               height={165}
             />
-
             <PortfolioCard
               description="Lorem ipsum dolor sit amet"
               cardName="card6"

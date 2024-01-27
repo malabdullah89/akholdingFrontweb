@@ -45,7 +45,7 @@ export default function NewsModal({ title, fullText, open, setOpen }: any) {
           p={1}
           maxHeight={"90vh"}
           sx={{
-            overflowY: "scroll",
+            // overflowY: "scroll",
             // borderRadius: "8px",
             "&::-webkit-scrollbar": {
               width: "4px",
