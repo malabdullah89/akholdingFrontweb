@@ -46,6 +46,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         alignItems: "center",
         justifyContent: "center",
         cursor: "pointer",
+        
       }}
     >
       {isHovered ? (
