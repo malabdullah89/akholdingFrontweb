@@ -59,39 +59,52 @@ const PortfolioSection = () => {
               width={274}
               height={87}
             />
+
           </Stack>
 
           <Stack
             sx={{
               display: "grid",
               gridTemplateColumns: {
-                xs: "repeat(auto-fill, minmax(300px, 1fr))",
-                md: "repeat(auto-fill, minmax(300px, 1fr))",
+                xs: "repeat(1, 1fr)",
+                sm: "repeat(2, 1fr)",
+                md: "repeat(auto-fill, minmax(240px, 1fr))",
+                lg: "repeat(4, 1fr)",
               },
-              gap: { xs: "22px", md: "10px" },
+              gap: "8px",
             }}
           >
             <PortfolioCard
-              description="Let’s get connected! Share your social platforms faster and easier with Reach."
-              cardName="card4"
-              alt="card4"
-              width={214}
-              height={76}
+               description="Let’s get connected! Share your social platforms faster and easier with Reach."
+               cardName="card4"
+               alt="card4" 
+              width={240}
+              height={87}
             />
             <PortfolioCard
-              description="Ghaseel is the first marketplace for car wash services in Kuwait, launched in 2015"
-              cardName="card5"
-              alt="card5"
-              width={120}
-              height={165}
+               description="Ghaseel is the first marketplace for car wash services in Kuwait, launched in 2015"
+               cardName="card5"
+               alt="card5"
+ 
+              width={250}
+              height={198}
             />
             <PortfolioCard
               description=""
               cardName="card6"
               alt="card6"
-              width={225}
-              height={43}
+              width={245}
+              height={114}
             />
+
+            <PortfolioCard
+              description=""
+              cardName="drylogow"
+              alt="dry"
+              width={300}
+              height={200}
+            />
+
           </Stack>
 
           <Stack
