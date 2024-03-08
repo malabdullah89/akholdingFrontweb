@@ -53,7 +53,7 @@ const PortfolioSection = () => {
             />
 
             <PortfolioCard
-              description="card12"
+              description=""
               cardName="card12"
               alt="card12"
               width={274}
